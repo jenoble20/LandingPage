@@ -1,0 +1,27 @@
+html{
+    font-size: 16px;
+}
+
+.container{
+    max-width: 120rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+#logo-name {
+    width:  25rem;
+    height: 30%;
+}
+
+.nav {
+    display: flex;
+}
+
+
