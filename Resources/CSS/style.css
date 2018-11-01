@@ -1,24 +1,40 @@
 html{
     font-size: 16px;
+    font-family: "Noto Sans";
+    background-color: #f6f7eb;
+}
+
+a{
+    color: #28262c;
+    text-decoration: none;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 120rem;
+    max-width: 100rem;
+    margin: auto;
 }
 
+
+/**HEADER SECTION**/
+
 #header {
-    display: flex;
     position: fixed;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 2px solid #FF8C00;
+    z-index: 10;
+    background-color: #c3a995;
+}
+
+#content-container{
+    display: flex;
+    max-width: 100rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    margin: 0;
-    width: 100%;
-    border-bottom: 1px solid black;
-    z-index: 10;
+    margin: auto;
 }
 
 #header-img {
@@ -28,7 +44,7 @@ html{
 
 #nav-list {
     display: flex;
-    margin: 0;
+    padding-right: 1.6rem;
 }
 
 .nav-item {
@@ -45,6 +61,7 @@ html{
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
+    font-size: 3rem;
 }
 
 #heading h1{
@@ -71,27 +88,67 @@ html{
 }
 
 
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 20rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 1rem;
+    background-color: #CBCCC1;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 2rem;
+    color: #28262C;
+}
+
+.content{
+    font-size: 1.2rem;
+}
+
+
 /**FEATURES SECTION**/
 
 #features {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    text-align: center;
+#features .icon{
+    width: 100%;
+    color: #ff8c00;
+    background-color: #28262C;
+    padding: 2rem;
+}
+
+#features .title{
+    margin: 2rem;
+}
+
+#features .content{
+    padding: 0 1rem;
+    margin-bottom: 2rem;
 }
 
 
 /**VIDEO SECTION**/
 
 #video{
-    background-image: url("https://i.ytimg.com/vi_webp/y8Yv4pnO7qc/sddefault.webp")
+    margin: 3rem;
+    border: 2px solid #FF8C00;
+    background-color: #28262c;
+    padding: 1rem;
+    border-radius: 10px;
 }
+
+
+/**PRICING SECTION**/
 
 #pricing {
     display: flex;
@@ -99,13 +156,43 @@ html{
     width: 100%;
 }
 
+#pricing .card{
+    justify-content: space-between;
+}
+
+#pricing .title{
+    width: 100%;
+    padding: 2rem;
+    background-color: #FF8C00;
+}
+
+
+/**FOOTER SECTION**/
+
 #footer {
+    width: auto;
+    color: #28262c;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #c3a995;
+
+}
+
+#footer-container{
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    max-width: 100rem;
+    margin: auto;
 }
+
+#wrapper{
+    padding-right: 1.1rem;
+}
+
 
 #links {
     display: flex;
-    justify-content: space-around
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
 }
+
